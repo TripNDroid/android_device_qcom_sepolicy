@@ -74,6 +74,7 @@ type sysfs_graphics, sysfs_type, fs_type;
 # USB/battery power supply type for hvdcp/quickcharge
 type sysfs_usb_supply, sysfs_type, fs_type;
 type sysfs_battery_supply, sysfs_type, fs_type;
+type sysfs_dc_supply, sysfs_type, fs_type;
 
 #Define the files written during the operation of mpdecision
 type sysfs_mpdecision, fs_type, sysfs_type;
@@ -97,9 +98,6 @@ type camera_socket, file_type;
 
 #Socket node needed by ims_data daemon
 type ims_socket, file_type;
-
-#mink-lowi-interface-daemon (mlid) socket
-type mlid_socket, file_type, mlstrustedobject;
 
 #location file types
 type location_data_file, file_type, data_file_type;
@@ -193,7 +191,6 @@ type ssr_ramdump_data_file, file_type, data_file_type;
 
 # Regionalization files
 type regionalization_file, file_type;
-type regionalization_data_file, file_type, data_file_type;
 
 # /data/system/swap/swapfile - swapfile
 type swap_data_file, file_type, data_file_type;
@@ -213,7 +210,3 @@ type sysfs_kgsl, sysfs_type, fs_type;
 
 # secure touch files
 type sysfs_securetouch, fs_type, sysfs_type;
-
-# QDMA data files
-type qdma_data_file, file_type, data_file_type;
-type qdma_app_data_file, file_type, data_file_type;

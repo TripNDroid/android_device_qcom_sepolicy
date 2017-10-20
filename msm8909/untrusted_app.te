@@ -28,5 +28,3 @@
 
 # for oemfs
 allow untrusted_app oemfs:lnk_file { read getattr };
-#for regionalization data file
-allow untrusted_app regionalization_data_file:file r_file_perms;
